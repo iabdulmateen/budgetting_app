@@ -3,59 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Budgetting App</title>
+    <title>Budgeting App</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <body>
-      <div class="container">
-        <div class="form-section">
-          <div class="card budget-card">
-            <h2>Budget</h2>
-
-            <input
-              type="number"
-              id="budget-input"
-              placeholder="Enter Total Amount"
-            />
-
-            <button id="budget-btn">Set Budget</button>
-          </div>
-
-          <div class="card expense-card">
-            <h2>Expenses</h2>
-
-            <input
-              type="text"
-              id="expense-title"
-              placeholder="Enter Title of Product"
-            />
-
-            <input
-              type="number"
-              id="expense-amount"
-              placeholder="Enter Cost of Product"
-            />
-
-            <button id="expense-btn">Check Amount</button>
-          </div>
+    <div class="container">
+      <div class="form-section">
+        <div class="card budget-card">
+          <h2>Budget</h2>
+          <input
+            type="number"
+            id="budget-input"
+            placeholder="Enter Total Amount"
+          />
+          <button id="budget-btn">Set Budget</button>
         </div>
-        <div class="summary">
-          <div class="summary-box">
-            <h3>Total-Budget</h3>
-            <p id="total-budget">0</p>
-          </div>
-          <div class="summary-box">
-            <h3>Expenses</h3>
-            <p id="total-expense">0</p>
-          </div>
-          <div class="summary-box">
-            <h3>Balance</h3>
-            <p id="balance">0</p>
-          </div>
+
+        <div class="card expense-card">
+          <h2>Expenses</h2>
+          <input
+            type="text"
+            id="expense-title"
+            placeholder="Enter Title of Product"
+          />
+          <input
+            type="number"
+            id="expense-amount"
+            placeholder="Enter Cost of Product"
+          />
+          <button id="expense-btn">Check Amount</button>
         </div>
       </div>
-    </body>
+
+      <div class="summary">
+        <div class="summary-box">
+          <span class="summary-title">Total Budget</span>
+          <p id="total-budget">100</p>
+        </div>
+        <div class="summary-box">
+          <span class="summary-title">Expenses</span>
+          <p id="total-expense">100</p>
+        </div>
+        <div class="summary-box">
+          <span class="summary-title">Balance</span>
+          <p id="balance">0</p>
+        </div>
+      </div>
+
+      <div class="expense-list-section">
+        <h2>Expense List</h2>
+        <ul id="expense-list">
+          <li class="expense-item">
+            <div class="expense-name">
+              <span class="bar"></span>
+              <p>net recharge</p>
+            </div>
+            <p class="expense-amount">90</p>
+            <div class="actions">
+              <button type="button" class="edit-btn" aria-label="Edit expense">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button
+                type="button"
+                class="delete-btn"
+                aria-label="Delete expense"
+              >
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </li>
+
+          <li class="expense-item">
+            <div class="expense-name">
+              <span class="bar"></span>
+              <p>Samosa</p>
+            </div>
+            <p class="expense-amount">10</p>
+            <div class="actions">
+              <button type="button" class="edit-btn" aria-label="Edit expense">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button
+                type="button"
+                class="delete-btn"
+                aria-label="Delete expense"
+              >
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script src="./app.js"></script>
   </body>
