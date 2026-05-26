@@ -39,7 +39,7 @@ body {
   outline: none;
 }
 #budget-btn {
-  background-color: #4f46e5;
+  background-color: #4466f2;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -49,7 +49,7 @@ body {
   margin-top: auto;
 }
 #expense-btn {
-  background-color: #4f46e5;
+  background-color: #4466f2;
   color: #fff;
   padding: 12px 30px;
   border: none;
@@ -57,4 +57,87 @@ body {
   cursor: pointer;
   font-weight: 600;
   margin-top: auto;
+}
+.summary {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #4466f2;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  height: 80px;
+}
+.summary-box {
+  text-align: center;
+  flex: 1;
+}
+.summary-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+.summary-box p {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+.expense-list-section {
+  margin-top: 30px;
+  width: 100%;
+}
+.expense-list-section h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+#expense-list {
+  list-style: none;
+}
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.expense-name {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.expense-amount {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.bar {
+  width: 4px;
+  height: 24px;
+  background-color: #4466f2;
+  margin-right: 15px;
+  border-radius: 2px;
+}
+.edit-btn i {
+  color: #4466f2;
+}
+.delete-btn i {
+  color: #dc3545;
 }
